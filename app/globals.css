@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --blue: rgb(16, 117, 200);
-  --blue-dk: #0d4d9b;
-  --blue-lt: #F0F6FF;
+  --blue: #2D3A4A;
+  --blue-dk: #1E2A38;
+  --blue-lt: #F0F2F4;
+  --accent: #E8622A;
+  --accent-dk: #C94E1A;
   --ink: #0F0F0F;
   --ink2: #1C1C1C;
   --gray: #6B7280;
-  --silver: #F4F4F4;
+  --silver: #F8F9FA;
   --white: #FFFFFF;
-  --border: #E5E5E5;
+  --border: #E5E7EB;
   --background: #ffffff;
   --foreground: #0F0F0F;
 }
@@ -20,6 +22,8 @@
   --color-blue: var(--blue);
   --color-blue-dk: var(--blue-dk);
   --color-blue-lt: var(--blue-lt);
+  --color-accent: var(--accent);
+  --color-accent-dk: var(--accent-dk);
   --color-ink: var(--ink);
   --color-ink2: var(--ink2);
   --color-gray: var(--gray);
@@ -42,7 +46,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--blue);
+  background: var(--accent);
   color: white;
   font-size: 12px;
   font-weight: 700;
@@ -57,7 +61,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--blue-dk);
+  background: var(--accent-dk);
 }
 
 .btn-outline {
@@ -217,6 +221,21 @@ body {
 @media (max-width: 480px) {
   .grid-3col {
     grid-template-columns: 1fr;
+  }
+}
+/* ── Process stepper ───────────────────────────────────────────────────── */
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-visual {
+    display: none !important;
   }
 }
 /* ────────────────────────────────────────────────────────────────────────── */
