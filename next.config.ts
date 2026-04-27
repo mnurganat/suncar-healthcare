@@ -6,9 +6,9 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
+      { protocol: "https", hostname: "suncarhealthcare.kz" },
+      { protocol: "https", hostname: "www.suncarhealthcare.kz" },
       { protocol: "https", hostname: "*.supabase.co" },
-      { protocol: "https", hostname: "labtech.kz" },
-      { protocol: "https", hostname: "www.labtech.kz" },
     ],
   },
   async redirects() {

@@ -1,6 +1,6 @@
 -- ====================================================
--- LabTech KZ — Supabase Schema (v2)
--- Запустить ПЕРВЫМ в: Supabase → SQL Editor
+-- Suncar Healthcare — Supabase Schema (v1)
+-- Запустить ПЕРВЫМ в: Supabase → SQL Editor → Run
 -- ====================================================
 
 -- Сначала удаляем старые таблицы (если были с uuid — пересоздадим с text)
@@ -26,6 +26,7 @@ create table if not exists products (
   id          text primary key,
   slug        text not null unique,
   category_id text references categories(id),
+  sku         text,                        -- артикул производителя
   price       text,                        -- NULL = "По запросу"
   images      text[] default '{}',
   specs       jsonb  default '{}',
