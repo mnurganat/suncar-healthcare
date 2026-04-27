@@ -72,15 +72,15 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link href={`/${locale}`} style={{ display: "flex", alignItems: "center", gap: 14, textDecoration: "none" }}>
-          <div style={{ width: 40, height: 40, background: "var(--blue)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <FlaskConical size={20} color="white" />
+          <div style={{ width: 40, height: 40, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <span style={{ color: "white", fontWeight: 900, fontSize: 15, fontFamily: "var(--font-roboto)" }}>SC</span>
           </div>
           <div>
             <div style={{ fontFamily: "var(--font-cactus), 'Cactus Classical Serif', serif", fontSize: 13, fontWeight: 700, color: "var(--ink)" }}>
-              LabTech
+              Suncar Healthcare
             </div>
             <div style={{ fontSize: 10, color: "var(--gray)", fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", marginTop: 1 }}>
-              {t("footer.tagline")}
+              Медицинское оборудование
             </div>
           </div>
         </Link>

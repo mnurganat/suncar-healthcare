@@ -223,6 +223,40 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ── Marquee ────────────────────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Hero grid ──────────────────────────────────────────────────────────── */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: end;
+}
+.stats-grid-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  min-width: 280px;
+}
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-grid-hero {
+    grid-template-columns: repeat(4, 1fr);
+    min-width: unset;
+  }
+}
+@media (max-width: 600px) {
+  .stats-grid-hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* ── Process stepper ───────────────────────────────────────────────────── */
 .process-grid {
   display: grid;

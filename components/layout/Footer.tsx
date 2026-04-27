@@ -23,15 +23,15 @@ export default function Footer() {
           {/* Brand + contacts */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-              <div style={{ width: 36, height: 36, background: "var(--blue)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <FlaskConical size={18} color="white" />
+              <div style={{ width: 36, height: 36, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <span style={{ color: "white", fontWeight: 900, fontSize: 13 }}>SC</span>
               </div>
               <div>
                 <div style={{ fontFamily: "var(--font-cactus), 'Cactus Classical Serif', serif", fontSize: 14, fontWeight: 700, color: "white" }}>
-                  LabTech
+                  Suncar Healthcare
                 </div>
                 <div style={{ fontSize: 10, color: "rgba(255,255,255,0.4)", fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                  {t("footer.tagline")}
+                  Медицинское оборудование
                 </div>
               </div>
             </div>

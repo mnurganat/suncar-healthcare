@@ -2,47 +2,31 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import {
-  ChevronRight,
-  Microscope,
-  FlaskConical,
-  Droplets,
-  PawPrint,
-  Wind,
-  GlassWater,
-  Activity,
-  Dna,
-  Droplet,
-  ShieldCheck,
-  Beaker,
-  Bug,
-  Package,
-  Cpu,
-  Sparkles,
-  Heart,
+  ChevronRight, Brain, Activity, Heart, Stethoscope,
+  Waves, Eye, Wind, Ear, Shield,
+  Cpu, Dumbbell, Zap, Scissors, MonitorCheck,
   type LucideIcon,
 } from "lucide-react";
 import type { Category } from "@/types";
 
 const SLUG_ICONS: Record<string, LucideIcon> = {
-  "kliniko-diagnosticheskaya":  Microscope,
-  "mikroskopy":                 Microscope,
-  "obshchelaboratornoe":        FlaskConical,
-  "reagenty":                   Droplets,
-  "veterinariya":               PawPrint,
-  "chistye-pomeshcheniya":      Wind,
-  "laboratornaya-posuda":       GlassWater,
-  "nebulayizery":               Activity,
-  "pcr-diagnostika":            Dna,
-  "koagulyatsiya":              Droplet,
-  "immunologiya":               ShieldCheck,
-  "gematologiya":               Beaker,
-  "biohimiya":                  FlaskConical,
-  "mikrobiologiya":             Bug,
-  "raskhodnye-materialy":       Package,
-  "avtomatizatsiya-ptsr":       Cpu,
-  "dezinfektsiya":              Sparkles,
-  "diagnostika-diabeta":        Heart,
-  "tonometry":                  Heart,
+  "eeg":            Brain,
+  "emg":            Activity,
+  "ecg":            Heart,
+  "uzi":            Waves,
+  "iom":            MonitorCheck,
+  "tms":            Zap,
+  "psg":            Cpu,
+  "spirografiya":   Wind,
+  "reografiya":     Activity,
+  "surdologiya":    Ear,
+  "sluhovye":       Ear,
+  "reabilitatsiya": Dumbbell,
+  "biomekhanika":   Stethoscope,
+  "psikhofiziolog": Brain,
+  "khirurgiya":     Scissors,
+  "zashchita":      Shield,
+  "elektrorg":      Eye,
 };
 
 interface CategoryCardProps {
@@ -51,7 +35,7 @@ interface CategoryCardProps {
 
 export default function CategoryCard({ category }: CategoryCardProps) {
   const locale = useLocale();
-  const Icon = SLUG_ICONS[category.slug] ?? FlaskConical;
+  const Icon = SLUG_ICONS[category.slug] ?? Activity;
 
   return (
     <Link
@@ -63,7 +47,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
         padding: "28px",
         textDecoration: "none",
         color: "inherit",
-        transition: "border-color 0.2s",
+        transition: "border-color 0.2s, box-shadow 0.2s",
         position: "relative",
       }}
       className="category-card-hover"
@@ -85,7 +69,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
           {category.description}
         </div>
       )}
-      <div style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 11, fontWeight: 700, color: "var(--blue)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 11, fontWeight: 700, color: "var(--accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
         Смотреть
         <ChevronRight size={14} />
       </div>
