@@ -1,0 +1,21 @@
+import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "*.supabase.co" },
+      { protocol: "https", hostname: "labtech.kz" },
+      { protocol: "https", hostname: "www.labtech.kz" },
+    ],
+  },
+  async redirects() {
+    return [
+      { source: "/", destination: "/ru", permanent: false },
+    ];
+  },
+};
+
+export default withNextIntl(nextConfig);
