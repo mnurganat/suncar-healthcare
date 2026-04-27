@@ -38,7 +38,7 @@ export async function generateMetadata({
     title: name,
     description: description.slice(0, 160),
     alternates: {
-      canonical: `https://labtech.kz/${locale}/catalog/${category}/${slug}`,
+      canonical: `https://suncarhealthcare.kz/${locale}/catalog/${category}/${slug}`,
       languages: {
         ru: `/ru/catalog/${category}/${slug}`,
         kk: `/kz/catalog/${category}/${slug}`,
@@ -124,14 +124,14 @@ export default async function ProductPage({
     "@type": "Product",
     name: productName,
     description: product.description ?? "",
-    url: `https://labtech.kz/${locale}/catalog/${category}/${slug}`,
+    url: `https://suncarhealthcare.kz/${locale}/catalog/${category}/${slug}`,
     ...(product.images?.[0] ? { image: product.images } : {}),
     offers: {
       "@type": "Offer",
       priceCurrency: "KZT",
       price: 0,
       availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: "ТОО «LabTech»" },
+      seller: { "@type": "Organization", name: "ТОО «Suncar Healthcare LTD»" },
     },
   };
 

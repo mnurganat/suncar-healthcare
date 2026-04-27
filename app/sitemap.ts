@@ -3,7 +3,7 @@ import { getAllCategorySlugs, getAllProductSlugs } from "@/lib/supabase/queries"
 
 export const dynamic = "force-dynamic";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://labtech.kz";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://suncarhealthcare.kz";
 const LOCALES = ["ru", "kz", "en"] as const;
 
 function urls(

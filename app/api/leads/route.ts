@@ -39,11 +39,11 @@ export async function POST(request: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "noreply@labtech.kz",
-          to: process.env.NOTIFICATION_EMAIL ?? "info@labtech.kz",
-          subject: `Новая заявка с сайта labtech.kz${product_name ? ` — ${product_name}` : ""}`,
+          from: "noreply@suncarhealthcare.kz",
+          to: process.env.NOTIFICATION_EMAIL ?? "suncarhealth@gmail.com",
+          subject: `Новая заявка с сайта suncarhealthcare.kz${product_name ? ` — ${product_name}` : ""}`,
           text: [
-            `Новая заявка с сайта labtech.kz`,
+            `Новая заявка с сайта suncarhealthcare.kz`,
             product_name ? `Товар: ${product_name}` : "",
             `Имя: ${name}`,
             `Телефон: ${phone}`,

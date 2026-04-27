@@ -11,7 +11,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/", "/admin/"],
       },
     ],
-    sitemap: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://labtech.kz"}/sitemap.xml`,
-    host: process.env.NEXT_PUBLIC_SITE_URL ?? "https://labtech.kz",
+    sitemap: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://suncarhealthcare.kz"}/sitemap.xml`,
+    host: process.env.NEXT_PUBLIC_SITE_URL ?? "https://suncarhealthcare.kz",
   };
 }

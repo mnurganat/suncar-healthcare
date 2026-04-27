@@ -17,11 +17,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("subtitle"),
-    alternates: { canonical: `https://labtech.kz/${locale}/about` },
+    alternates: { canonical: `https://suncarhealthcare.kz/${locale}/about` },
   };
 }
 
-const BASE = "https://www.labtech.kz";
+const BASE = "https://www.suncarhealthcare.kz";
 const CLIENT_LOGOS: { src: string; name: string; url: string }[] = [
   { src: `${BASE}/templates/yootheme/cache/36/10_5-c4a6dc8b-36b9d48b.jpeg`,                              name: "Archimedes Kazakhstan",                    url: "" },
   { src: `${BASE}/templates/yootheme/cache/da/logo020-da216b4d.jpeg`,                                    name: "Авиценна медицинский центр",               url: "" },

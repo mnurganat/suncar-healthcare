@@ -10,7 +10,7 @@
     "services": "Services",
     "news": "News",
     "contacts": "Contacts",
-    "phone": "+7 (727) 327-74-77",
+    "phone": "+7 (701) 879-44-44",
     "search_placeholder": "Search equipment...",
     "catalog_all": "Full catalog"
   },
@@ -35,7 +35,7 @@
     "products_count": "products"
   },
   "why_us": {
-    "title": "Why Choose LabTech",
+    "title": "Why Choose Suncar Healthcare",
     "item1_title": "Official Supply",
     "item1_text": "Direct contracts with 19+ manufacturers. Original equipment with conformity certificates and warranty.",
     "item2_title": "Service & Maintenance",
@@ -103,19 +103,19 @@
   "contact_section": {
     "title": "Contact Us",
     "subtitle": "Leave a request and we'll respond within 2 hours",
-    "address": "Almaty, Aksai-4 district, 117a, basement floor",
-    "phone": "+7 (727) 327-74-77",
-    "email": "info@labtech.kz",
-    "hours": "Mon–Fri 9:00–18:00"
+    "address": "Almaty, Aksai 2 district, 44A, 3rd floor",
+    "phone": "+7 (701) 879-44-44",
+    "email": "suncarhealth@gmail.com",
+    "hours": "Mon–Fri 8:00–17:00"
   },
   "about": {
     "title": "About Us",
-    "tag": "LabTech LLP — Official Distributor",
-    "subtitle": "Supplier of laboratory and medical equipment in Kazakhstan. Working with public and private medical institutions since 2008.",
+    "tag": "Suncar Healthcare LTD — Official Distributor",
+    "subtitle": "Supplier of medical equipment in Kazakhstan. Working with public and private medical institutions since 2018.",
     "mission_title": "Our Mission",
-    "mission_text": "To provide Kazakhstan's laboratories with reliable, certified equipment from the world's leading manufacturers. We deliver not just equipment — we provide the full cycle: from selection and supply to installation, staff training and service.",
+    "mission_text": "To provide Kazakhstan's healthcare institutions with reliable, certified medical equipment from the world's leading manufacturers. We deliver not just equipment — we provide the full cycle: from selection and supply to installation, staff training and service.",
     "mission_tag": "Our Mission",
-    "mission_intro": "LabTech LLP is the official representative of leading global laboratory equipment manufacturers in Kazakhstan. We work with clinical, biochemical, PCR and ELISA laboratories, as well as veterinary services.",
+    "mission_intro": "Suncar Healthcare LTD is the official representative of leading global medical equipment manufacturers in Kazakhstan. We specialize in EEG, EMG, ECG, ultrasound, surgical, rehabilitation, and audiological equipment.",
     "mission_client1": "Public and private medical institutions",
     "mission_client2": "Universities and research institutes",
     "mission_client3": "Veterinary laboratories",
@@ -222,12 +222,12 @@
     "tag": "We Are Nearby",
     "subtitle": "Contact us in any convenient way",
     "address_title": "Address",
-    "address": "Almaty, Aksai-4 district, 117a, basement floor",
+    "address": "Almaty, Aksai 2 district, 44A, 3rd floor",
     "phone_title": "Phone",
     "email_title": "Email",
     "hours_title": "Working hours",
-    "hours": "Monday – Friday: 9:00 – 18:00",
-    "hours_weekdays": "Mon–Fri: 9:00–18:00",
+    "hours": "Monday – Friday: 8:00 – 17:00",
+    "hours_weekdays": "Mon–Fri: 8:00–17:00",
     "hours_weekend": "Sat–Sun: closed",
     "whatsapp_title": "Message Us on WhatsApp",
     "whatsapp_sub": "Fast response during business hours",
@@ -262,7 +262,7 @@
     "catalog": "Catalog"
   },
   "footer": {
-    "company": "LabTech LLP",
+    "company": "Suncar Healthcare LTD",
     "tagline": "Laboratory Equipment",
     "description": "Official laboratory equipment distributor in Kazakhstan. 19+ manufacturers, 15 years of experience.",
     "catalog": "Catalog",
@@ -279,16 +279,16 @@
     "cat4": "Reagents",
     "cat5": "Veterinary",
     "cat6": "Nebulizers",
-    "hours": "Mon–Fri: 9:00–18:00",
+    "hours": "Mon–Fri: 8:00–17:00",
     "hours_weekend": "Sat–Sun: closed",
     "socials": "Social Media",
     "whatsapp_chat": "WhatsApp chat",
-    "copyright": "© 2008–2026 LabTech LLP. All rights reserved.",
-    "address": "Almaty, Aksai-4 district, 117a, basement floor",
-    "phone": "+7 (727) 327-74-77",
-    "phone2": "+7 (727) 220-81-42",
+    "copyright": "© 2018–2026 Suncar Healthcare LTD. All rights reserved.",
+    "address": "Almaty, Aksai 2 district, 44A, 3rd floor",
+    "phone": "+7 (701) 879-44-44",
+    "phone2": "+7 (701) 879-44-44",
     "whatsapp": "+7 701 879 69 04",
-    "email": "info@labtech.kz"
+    "email": "suncarhealth@gmail.com"
   },
   "partners": {
     "title": "Partners",
@@ -301,7 +301,7 @@
     "products_label": "Products",
     "grid_title": "Our Partners & Suppliers",
     "cta_tag": "Partnership",
-    "cta_title": "Become a LabTech Partner",
+    "cta_title": "Become a Suncar Healthcare Partner",
     "cta_text": "If you are a laboratory equipment manufacturer or distributor, contact us to discuss partnership terms.",
     "cta_btn": "Write to Us"
   },

@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("subtitle"),
-    alternates: { canonical: `https://labtech.kz/${locale}/services` },
+    alternates: { canonical: `https://suncarhealthcare.kz/${locale}/services` },
   };
 }
 

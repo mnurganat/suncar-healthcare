@@ -24,9 +24,9 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "catalog" });
   return {
     title: t("title"),
-    description: "Полный каталог лабораторного и медицинского оборудования — LabTech Казахстан",
+    description: "Полный каталог лабораторного и медицинского оборудования — Suncar Healthcare Казахстан",
     alternates: {
-      canonical: `https://labtech.kz/${locale}/catalog`,
+      canonical: `https://suncarhealthcare.kz/${locale}/catalog`,
       languages: { ru: "/ru/catalog", kk: "/kz/catalog", en: "/en/catalog" },
     },
   };

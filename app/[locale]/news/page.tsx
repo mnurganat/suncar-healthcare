@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "news" });
-  return { title: t("title"), alternates: { canonical: `https://labtech.kz/${locale}/news` } };
+  return { title: t("title"), alternates: { canonical: `https://suncarhealthcare.kz/${locale}/news` } };
 }
 
 const MOCK_NEWS = [
@@ -42,7 +42,7 @@ const MOCK_NEWS = [
     date: "6 ноября 2023",
     tag: "Партнёрство",
     title: "UMC Комплекс: комплексное оснащение лабораторий",
-    summary: "LabTech подписал соглашение о поставке комплектации для лабораторий Университетского медицинского центра. В пакет вошли биохимические анализаторы, гематология и расходные материалы на 12 месяцев.",
+    summary: "Suncar Healthcare подписал соглашение о поставке медицинского оборудования для Университетского медицинского центра. В пакет вошли диагностические комплексы, нейрофизиологическое и реабилитационное оборудование.",
   },
   {
     id: 5,

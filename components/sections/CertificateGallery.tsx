@@ -2,25 +2,19 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-const CERTS = [
-  "https://www.labtech.kz/images/sertifikaty/F2v.jpg",
-  "https://www.labtech.kz/images/sertifikaty/gis.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S1.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S2.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S3.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S4.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S5.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S6.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S7.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S8.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S9.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S10.jpg",
-  "https://www.labtech.kz/images/sertifikaty/S11.jpg",
-  "https://www.labtech.kz/images/0new/sert.jpg",
-];
+// TODO: Replace with real Suncar Healthcare certificate images
+const CERTS: string[] = [];
 
 export default function CertificateGallery() {
   const [active, setActive] = useState<number | null>(null);
+
+  if (CERTS.length === 0) {
+    return (
+      <div style={{ padding: "40px 0", textAlign: "center", color: "var(--gray)", fontSize: 14 }}>
+        Сертификаты скоро будут добавлены
+      </div>
+    );
+  }
 
   const prev = () => setActive((i) => (i! > 0 ? i! - 1 : CERTS.length - 1));
   const next = () => setActive((i) => (i! < CERTS.length - 1 ? i! + 1 : 0));

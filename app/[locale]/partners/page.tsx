@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("subtitle"),
-    alternates: { canonical: `https://labtech.kz/${locale}/partners` },
+    alternates: { canonical: `https://suncarhealthcare.kz/${locale}/partners` },
   };
 }
 
@@ -85,7 +85,7 @@ export default async function PartnersPage({ params }: { params: Promise<{ local
               {t("partners.cta_text")}
             </p>
           </div>
-          <a href="mailto:info@labtech.kz" className="btn-primary" style={{ flexShrink: 0 }}>
+          <a href="mailto:suncarhealth@gmail.com" className="btn-primary" style={{ flexShrink: 0 }}>
             {t("partners.cta_btn")}
           </a>
         </div>

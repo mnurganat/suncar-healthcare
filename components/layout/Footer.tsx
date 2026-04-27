@@ -48,11 +48,8 @@ export default function Footer() {
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <Phone size={14} style={{ color: "var(--blue)", flexShrink: 0 }} />
                 <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                  <a href="tel:+77273277477" style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+                  <a href="tel:+77018794444" style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
                     {t("footer.phone")}
-                  </a>
-                  <a href="tel:+77272208142" style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
-                    {t("footer.phone2")}
                   </a>
                 </div>
               </div>
@@ -129,12 +126,12 @@ export default function Footer() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               <a
-                href="https://www.instagram.com/labtechnology/"
+                href="https://www.instagram.com/suncar_healthcare/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
               >
-                Instagram @labtechnology
+                Instagram @suncar_healthcare
               </a>
               <a
                 href="https://wa.me/77018796904"
@@ -153,7 +150,7 @@ export default function Footer() {
       <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "20px", paddingBottom: "20px" }} className="px-5 md:px-14">
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: 1400, margin: "0 auto", flexWrap: "wrap", gap: 8 }}>
           <span style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>{t("footer.copyright")}</span>
-          <span style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>labtech.kz</span>
+          <span style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>suncarhealthcare.kz</span>
         </div>
       </div>
     </footer>

@@ -33,11 +33,11 @@ export async function generateMetadata({
     const name = cat?.name ?? mockCat?.name ?? category;
     return {
       title: name,
-      description: `Купить ${name} в Казахстане. LabTech — официальный дистрибьютор.`,
-      alternates: { canonical: `https://labtech.kz/${locale}/catalog/${category}` },
+      description: `Купить ${name} в Казахстане. Suncar Healthcare — официальный дистрибьютор.`,
+      alternates: { canonical: `https://suncarhealthcare.kz/${locale}/catalog/${category}` },
     };
   } catch {
-    return { title: `Каталог | LabTech` };
+    return { title: `Каталог | Suncar Healthcare` };
   }
 }
 
