@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("subtitle"),
-    alternates: { canonical: `https://labtech.kz/${locale}/contacts` },
+    alternates: { canonical: `https://suncarhealthcare.kz/${locale}/contacts` },
   };
 }
 
@@ -35,21 +35,21 @@ export default async function ContactsPage({ params }: { params: Promise<{ local
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "MedicalOrganization"],
-    name: "ТОО «LabTech»",
-    url: "https://labtech.kz",
-    telephone: "+77273277477",
-    email: "info@labtech.kz",
+    name: "ТОО «Suncar Healthcare LTD»",
+    url: "https://suncarhealthcare.kz",
+    telephone: "+77018794444",
+    email: "suncarhealth@gmail.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "мкр. Аксай-4, 117а, цокольный этаж",
+      streetAddress: "мкр. Аксай 2, 44А, 3 этаж",
       addressLocality: "Алматы",
       addressCountry: "KZ",
     },
     openingHoursSpecification: [{
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "18:00",
+      opens: "08:00",
+      closes: "17:00",
     }],
     areaServed: { "@type": "Country", name: "Kazakhstan" },
   };
@@ -96,8 +96,7 @@ export default async function ContactsPage({ params }: { params: Promise<{ local
                 label: t("contacts.phone_title"),
                 content: (
                   <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                    <a href="tel:+77273277477" style={{ fontSize: 14, fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>+7 (727) 327-74-77</a>
-                    <a href="tel:+77272208142" style={{ fontSize: 14, fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>+7 (727) 220-81-42</a>
+                    <a href="tel:+77018794444" style={{ fontSize: 14, fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>+7 (701) 879-44-44</a>
                   </div>
                 ),
               },
@@ -105,7 +104,7 @@ export default async function ContactsPage({ params }: { params: Promise<{ local
                 icon: Mail,
                 label: t("contacts.email_title"),
                 content: (
-                  <a href="mailto:info@labtech.kz" style={{ fontSize: 14, fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>info@labtech.kz</a>
+                  <a href="mailto:suncarhealth@gmail.com" style={{ fontSize: 14, fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>suncarhealth@gmail.com</a>
                 ),
               },
               {
@@ -180,12 +179,12 @@ export default async function ContactsPage({ params }: { params: Promise<{ local
         <div style={{ maxWidth: 1400, margin: "0 auto" }}>
           <div style={{ position: "relative" }}>
             <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=76.782%2C43.254%2C76.822%2C43.282&layer=mapnik&marker=43.268%2C76.802"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=76.817%2C43.261%2C76.857%2C43.289&layer=mapnik&marker=43.275%2C76.837"
               width="100%"
               height="420"
               style={{ border: 0, display: "block", filter: "contrast(0.95) brightness(0.98)" }}
               loading="lazy"
-              title="LabTech на карте"
+              title="Suncar Healthcare на карте"
             />
             {/* Address overlay */}
             <div style={{
@@ -199,7 +198,7 @@ export default async function ContactsPage({ params }: { params: Promise<{ local
               maxWidth: 280,
             }}>
               <div style={{ fontSize: 12, fontWeight: 700, color: "var(--blue)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 8 }}>
-                ТОО «LabTech»
+                ТОО «Suncar Healthcare LTD»
               </div>
               <div style={{ fontSize: 13, color: "var(--ink)", lineHeight: 1.55, marginBottom: 12 }}>
                 {t("contacts.address")}
