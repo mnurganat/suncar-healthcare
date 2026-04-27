@@ -1,18 +1,18 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
-import { FlaskConical, MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations();
   const locale = useLocale();
 
   const catalogLinks = [
-    { key: "cat1", slug: "kliniko-diagnosticheskaya" },
-    { key: "cat2", slug: "mikroskopy" },
-    { key: "cat3", slug: "obshchelaboratornoe" },
-    { key: "cat4", slug: "reagenty" },
-    { key: "cat5", slug: "veterinariya" },
-    { key: "cat6", slug: "nebulayizery" },
+    { key: "cat1", slug: "eeg" },
+    { key: "cat2", slug: "emg" },
+    { key: "cat3", slug: "ecg" },
+    { key: "cat4", slug: "uzi" },
+    { key: "cat5", slug: "khirurgiya" },
+    { key: "cat6", slug: "reabilitatsiya" },
   ];
 
   return (
