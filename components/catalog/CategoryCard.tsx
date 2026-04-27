@@ -10,23 +10,25 @@ import {
 import type { Category } from "@/types";
 
 const SLUG_ICONS: Record<string, LucideIcon> = {
-  "eeg":            Brain,
-  "emg":            Activity,
-  "ecg":            Heart,
-  "uzi":            Waves,
-  "iom":            MonitorCheck,
-  "tms":            Zap,
-  "psg":            Cpu,
-  "spirografiya":   Wind,
-  "reografiya":     Activity,
-  "surdologiya":    Ear,
-  "sluhovye":       Ear,
-  "reabilitatsiya": Dumbbell,
-  "biomekhanika":   Stethoscope,
-  "psikhofiziolog": Brain,
-  "khirurgiya":     Scissors,
-  "zashchita":      Shield,
-  "elektrorg":      Eye,
+  // Слаги из дампа suncarhealthcare.kz
+  "eeg":                             Brain,
+  "emg":                             Activity,
+  "ekg":                             Heart,
+  "uzi":                             Waves,
+  "iom":                             MonitorCheck,
+  "tms":                             Zap,
+  "psg":                             Cpu,
+  "spiro":                           Wind,
+  "reo":                             Activity,
+  "surdologiya":                     Ear,
+  "sluhovye-apparaty":               Ear,
+  "reabilitaciya":                   Dumbbell,
+  "biomehanika":                     Stethoscope,
+  "psihofiziologiya":                Brain,
+  "hirurgiya":                       Scissors,
+  "sredstva-individualnoj-zashhity": Shield,
+  "erg":                             Eye,
+  "sfigmografiya":                   Activity,
 };
 
 interface CategoryCardProps {

@@ -7,16 +7,16 @@ import ProductCard from "@/components/catalog/ProductCard";
 import ContactSection from "@/components/sections/ContactSection";
 import ClinicProcessSection from "@/components/sections/ClinicProcessSection";
 import CATEGORIES from "@/data/categoryTree";
+import Image from "next/image";
 import { ArrowRight, Phone } from "lucide-react";
+import PARTNERS from "@/data/partners";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const PARTNERS = [
-  "Neurosoft", "Петр Телегин", "Спектромед", "FIAB",
-  "Medicraft", "Geltek", "Erenler", "B. Braun", "Aurica", "Mitsubishi",
-];
+// Только партнёры с логотипами для marquee
+const MARQUEE_PARTNERS = PARTNERS.filter(p => p.logo);
 
 const STATS = [
   { value: "7+",   label: "лет на рынке" },
@@ -96,12 +96,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* ── PARTNERS MARQUEE ─────────────────────────────────────────── */}
-      <div style={{ background: "var(--ink)", padding: "14px 0", overflow: "hidden", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-        <div style={{ display: "flex", gap: 0, animation: "marquee 22s linear infinite", width: "max-content" }}>
-          {[...PARTNERS, ...PARTNERS].map((p, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center", gap: 0, whiteSpace: "nowrap" }}>
-              <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.45)", letterSpacing: "0.1em", textTransform: "uppercase", padding: "0 32px" }}>{p}</span>
-              <span style={{ color: "var(--accent)", fontSize: 10 }}>◆</span>
+      <div style={{ background: "white", borderTop: "3px solid var(--accent)", borderBottom: "1px solid var(--border)", padding: "20px 0", overflow: "hidden" }}>
+        <div style={{ display: "flex", gap: 0, animation: "marquee 28s linear infinite", width: "max-content" }}>
+          {[...MARQUEE_PARTNERS, ...MARQUEE_PARTNERS].map((p, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 0, padding: "0 40px", borderRight: "1px solid var(--border)" }}>
+              <div style={{ position: "relative", width: 110, height: 44, filter: "grayscale(100%)", opacity: 0.55 }}>
+                <Image src={p.logo} alt={p.name} fill style={{ objectFit: "contain" }} unoptimized />
+              </div>
             </div>
           ))}
         </div>
