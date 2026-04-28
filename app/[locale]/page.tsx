@@ -50,7 +50,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
             {/* Left */}
             <div>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(232,98,42,0.15)", border: "1px solid rgba(232,98,42,0.3)", padding: "6px 14px", marginBottom: 32 }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(27,143,168,0.15)", border: "1px solid rgba(27,143,168,0.3)", padding: "6px 14px", marginBottom: 32 }}>
                 <div style={{ width: 6, height: 6, background: "var(--accent)", borderRadius: "50%" }} />
                 <span style={{ fontSize: 11, fontWeight: 700, color: "var(--accent)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
                   Официальный дистрибьютор

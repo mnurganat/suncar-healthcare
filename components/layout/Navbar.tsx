@@ -157,7 +157,7 @@ export default function Navbar() {
                 key={loc}
                 onClick={() => switchLocale(loc)}
                 style={{
-                  background: locale === loc ? "rgba(232,98,42,0.2)" : "none",
+                  background: locale === loc ? "rgba(27,143,168,0.25)" : "none",
                   color: locale === loc ? "var(--accent)" : "rgba(255,255,255,0.35)",
                   border: "none",
                   padding: "3px 7px",
