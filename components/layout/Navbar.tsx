@@ -76,14 +76,14 @@ export default function Navbar() {
             display: "flex", alignItems: "center", justifyContent: "center",
             clipPath: "polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%)",
           }}>
-            <span style={{ color: "white", fontWeight: 900, fontSize: 14, letterSpacing: "0.05em" }}>SC</span>
+            <span style={{ color: "white", fontWeight: 900, fontSize: 12, letterSpacing: "0.05em" }}>SHL</span>
           </div>
           <div>
             <div style={{
               fontFamily: "var(--font-cactus), 'Cactus Classical Serif', serif",
               fontSize: 15, fontWeight: 700, color: "white", lineHeight: 1.1,
             }}>
-              Suncar Healthcare
+              Suncar Healthcare LTD
             </div>
             <div style={{ fontSize: 9, color: "rgba(255,255,255,0.35)", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginTop: 2 }}>
               Медицинское оборудование
